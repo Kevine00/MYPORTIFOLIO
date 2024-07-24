@@ -419,15 +419,15 @@ width: 90% !important;
 }
 
 .progess:nth-child(3) .inner-row{
-    width: 80% !important;
+    width: 90% !important;
     }
 
 .progess:nth-child(4) .inner-row{
-        width: 20% !important;
+        width: 60% !important;
         }
 
 .progess:nth-child(5) .inner-row{
-            width: 30% !important;
+            width: 80% !important;
             }
 /* .............end skills section........... */
 
