@@ -18,6 +18,25 @@
             emailjs.init("HE2xuTro2ETXJgfRn");
           })();
         </script>
+
+<script>
+    // Example of using an environment variable in the browser context
+    const generateSourceMap = process.env.GENERATE_SOURCEMAP === 'false';
+    if (!generateSourceMap) {
+      console.log('Source maps are disabled.');
+      // Load your minified script
+      const script = document.createElement('script');
+      script.src = 'path/to/your/minified/script.js';
+      document.body.appendChild(script);
+    } else {
+      console.log('Source maps are enabled.');
+      // Load your source map
+      const script = document.createElement('script');
+      script.src = 'path/to/your/source/map.js';
+      document.body.appendChild(script);
+    }
+  </script>
+        
     </head>
     
 <body>
@@ -282,7 +301,7 @@
 
         <div class="portfolio-projects " >
             <div class="project card" data-name="backend">
-                <img src="proj1.jpg" alt="" >
+                <img src="proj1.PNG" alt="" >
                 <h4>project 1(backend)</h4>
                 <p>how you your story  matters a good design  increase
                     your leads and sale ,it grow impact and makes your website
@@ -294,7 +313,7 @@
             </div>
 
             <div class="project card" data-name="frontend">
-            <img src="proj2.jpeg" alt="">
+            <img src="proj2.PNG" alt="">
             <h4>project 2(frontend)</h4>
             <p>how you your story  matters a good design  increase
                 your leads and sale ,it grow impact and makes your website
@@ -306,7 +325,7 @@
         </div>
 
         <div class="project card" data-name="frontend">
-            <img src="proj3.jpeg" alt="">
+            <img src="proj3.PNG" alt="">
             <h4>project 3(frontend)</h4>
             <p>how you your story  matters a good design  increase
                 your leads and sale ,it grow impact and makes your website
@@ -319,7 +338,7 @@
 
 
         <div class="project card" data-name="backend">
-            <img src="proj4.jpg" alt="">
+            <img src="proj4.PNG" alt="">
             <h4>project 4(backend)</h4>
             <p>how you your story  matters a good design  increase
                 your leads and sale ,it grow impact and makes your website
@@ -331,7 +350,7 @@
         </div>
 
         <div class="project card" data-name="frontend">
-            <img src="proj5.jpeg" alt="">
+            <img src="proj5.PNG" alt="">
             <h4>project 5(frontend)</h4>
             <p>how you your story  matters a good design  increase
                 your leads and sale ,it grow impact and makes your website
@@ -343,7 +362,7 @@
         </div>
 
         <div class="project card" data-name="backend">
-            <img src="proj6.jpeg" alt="">
+            <img src="proj6.PNG" alt="">
             <h4>project 6(backend)</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, laudantium eum. Reprehenderit commodi aliquam ipsum, sint accusamus quod.</p>
             <div class="project-action-aria">
@@ -398,8 +417,7 @@
 <!-- custom js link -->
 <script src="script.js"></script>
 
-<!-- typed js link -->
-<script src="typed.js-main/"></script>
+
 
 <!-- Email.js form submission script -->
 <script type="text/javascript">

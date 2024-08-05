@@ -29,7 +29,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-color:rgb(84, 83, 83);
+    background-color:#071539;
     color: white;
 }
 h1{
@@ -87,7 +87,7 @@ img{
     padding: 16px 32px;
     border: 2px solid transparent;
     cursor: pointer;
-    background: gray;
+    background: #091a47;
     color:white;
     border-radius: 1rem;
     font-size: 18px;
@@ -105,7 +105,7 @@ img{
 }
 .btn-white:hover{
     background: white;
-    color:gray;
+    color:#091a47;
 }
 
 .btn-sm{
@@ -139,8 +139,9 @@ transform: var(--transition);
     width: 90%;
     margin: 0 auto;
 }
+
 /* ..............start navbar.................. */
-nav{
+nav {
     height: 7rem;
     width: 100%;
     display: flex;
@@ -149,40 +150,71 @@ nav{
     top: 0;
     left: 0;
     z-index: 10;
-    background-color: rgb(66, 66, 66);
+    background-color:#071742;
 }
-.nav-scroll{
-   background-color: rgb(66, 66, 66); 
-   box-shadow: 0 0 1rem  rgb(42, 42, 42) ;
+
+.nav-scroll {
+    background-color: #091a47; 
+    box-shadow: 0 0 1rem #081740;
 }
-.nav-container{
+
+.nav-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.menu-button{
+
+.menu-button {
     display: none;
 }
 
-.nav-links{
+.nav-links {
     display: flex;
     align-items: center;
     gap: 4rem;
+    list-style-type: none; 
+    padding: 0;          
+    margin: 0;             
 }
-.nav-links li a{
+
+.nav-links li {
+    position: relative; 
+}
+
+.nav-links li a {
     color: white;
     font-size: 17px;
     transition: var(--transition);
-}
-.nav-links li a:hover{
-    transform:translateY(-.5rem);
+    text-decoration: none; 
+    position: relative;
 }
 
-.menu-bar{
+.nav-links li a:hover {
+    transform: translateY(-.5rem);
+}
+
+.nav-links li a::after {
+    content: ""; 
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease; 
+    position: absolute;
+    bottom: -5px; 
+    left: 0;
+}
+
+.nav-links li a:hover::after {
+    width: 100%; 
+}
+
+.menu-bar {
     display: none;
 }
 
 /* ..............end navbar.................. */
+
 
 
 /* .............start header section........... */
@@ -208,7 +240,7 @@ position: relative;
     width: 1000%;
     right: -981%;
     position: absolute;
-    background:gray;
+    background:#091a47;
     height: 100%;
     z-index: -1;
 }
@@ -216,7 +248,7 @@ position: relative;
 .header-left-h2{
 margin: 1rem 0;
 }.typed-text{
-    background-color: rgb(83, 81, 81);
+    background-color:#091a47;
     border-bottom: 4px solid white;
 }
 
@@ -239,7 +271,7 @@ margin: 1rem 0;
     position:absolute;
     width: 80%;
     height: 80%;
-    background:rgb(105, 104, 104);
+    background:#081740;
     border-radius: 50%;
     overflow: hidden;
     display: flex;
@@ -290,7 +322,7 @@ gap: 2rem;
     transition: var(--transition);
 }
 .social-links a:hover{
-    color: gray;
+    color:#091a47;
     transform: translateY(-.5rem);
 }
 .HireMe{
@@ -303,14 +335,14 @@ gap: 2rem;
 }
 .HireMe:hover{
     transform: translateY(-.5rem);
-    color: rgb(67, 67, 67);
+    color: #0b2c85;
 }
 /* .............end header section........... */
 
 /* .............start about section........... */
 
 #About{
-    background:rgb(84, 83, 83) ;
+    background:#071539 ;
 }
 .about-container{
     width: 70%;
@@ -327,7 +359,7 @@ gap: 2rem;
     display: flex;
     flex-direction: column;
     gap: .8rem;
-    background-color: rgb(72, 72, 72);
+    background-color: #091a47;
 }
 .about-card:hover span{
     width: fit-content;
@@ -338,7 +370,7 @@ gap: 2rem;
     border-radius: .4rem;
 }
 .about-card:hover span{
-    background: rgb(55, 55, 55);
+    background: #091a47;
     
 }
 
@@ -375,7 +407,7 @@ gap: 2rem;
     flex-direction: column;
     gap: .8rem;
     text-align: center;
-    background-color: rgb(75, 75, 75);
+    background-color: #091a47;
 }
 .skills-card span{
     font-size: 2rem;
@@ -411,7 +443,7 @@ top: 0;
 
 .inner-row{
 width: 100%;
-background: gray;
+background: #091a47;
 height: 100%;
 }
 .progess:nth-child(2) .inner-row{
@@ -445,7 +477,7 @@ width: 90% !important;
     flex-direction: row;
     gap: .8rem;
     text-align: center;
-    background-color: rgb(74, 74, 74);
+    background-color: #091a47;
 }
 .services-card span{
     font-size: 1.6rem;
@@ -464,7 +496,7 @@ width: 90% !important;
 }
 .tab-active{
     background: white;
-    color: gray;
+    color: #081740;
 }
 
 .portfolio-projects{
@@ -477,7 +509,7 @@ width: 90% !important;
     display: grid;
     flex-direction: column;
     gap: .8rem;
-    background-color: rgb(68, 68, 68);
+    background-color: #091a47;
     animation:projectAni var(--transition) ;
 }
 @keyframes projectAni{
@@ -491,7 +523,8 @@ width: 90% !important;
 
 .project img{
     border-radius: .8rem;
- 
+ /* width: 20rem; */
+ object-fit: contain;
 }
 .project-action-aria{
     display: flex;
@@ -537,7 +570,7 @@ color: white;
 /* .............start footer section........... */
 
 footer{
-    background:rgb(66, 66, 66);
+    background:#071742;
     height: 5rem;
     display: flex;
     align-items: center;
@@ -569,7 +602,7 @@ width:60% ;
     }
     /* .........start nav........... */
     .nav{
-background: rgb(63, 63, 63);
+background:#061232;
     }
     .nav-links{
         display: none;
@@ -589,7 +622,7 @@ background: rgb(63, 63, 63);
         height:5rem ;
         align-items: center;
         justify-content: center;
-        background: rgb(62, 62, 62);
+        background: #061232;
         z-index: 1;
         transition: var(--transition);
     }
